@@ -1,0 +1,14 @@
+seed: 42
+gpus:
+  backend: dp
+  ids:
+    - 0
+    - 1
+data:
+  dir: /home/mustafa/Documents/DMQC/dmqc/data_/
+  patient_ids: ${data.dir}/patient_id.csv
+  n_classes: 5
+  json_path: /home/mustafa/Documents/DMQC/dmqc/data_/merged_file.json
+  img_path: 500_img_resized/*.png
+defaults:
+  - experiment: vgg11_bn_fpn

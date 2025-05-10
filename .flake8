@@ -1,0 +1,8 @@
+[flake8]
+ignore = E203, E266, E501, W503, F403, F401, F821, E722
+    # F821 undefined name 'isfloat' in folder_in_folder_dco_to_png.py
+    # E722 do not use bare 'except' in folder_in_folder_dco_to_png.py
+
+max-line-length = 100
+max-complexity = 18
+select = B,C,E,F,W,T4,B9

@@ -1,0 +1,45 @@
+Architecture	Model	Best threshold for Whole Breast	Best threshold for Breast	Best threshold for Muscle	Best threshold for Skin Folding	Best threshold for Nipple
+Unet:
+  vgg11_bn:
+    wb: 0.32
+    b: 0.41
+    m: 0.35
+    sf: 0.14
+    n: 0.08
+
+  resnet34:
+    wb: 0.4
+    b: 0.53
+    m: 0.43
+    sf: 0.18
+    n: 0.09
+
+  resnet50:
+    wb: 0.32
+    b: 0.48
+    m: 0.39
+    sf: 0.15
+    n: 0.1
+
+
+FPN:
+  resnet34:
+    wb: 0.42
+    b: 0.44
+    m: 0.41
+    sf: 0.18
+    n: 0.11
+
+  vgg11_bn:
+    wb: 0.35
+    b: 0.5
+    m: 0.48
+    sf: 0.2
+    n: 0.16
+
+  resnet50:
+    wb: 0.43
+    b: 0.43
+    m: 0.58
+    sf: 0.21
+    n: 0.11

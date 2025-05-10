@@ -1,0 +1,9 @@
+lr: 0.0001
+n_epoches: 2
+wd: 0.0001
+threshold: 0.5
+bs: 8
+n_folds: 5
+model: "se_resnext50_32x4d"
+backbone: 'FPN'
+num_workers: 8

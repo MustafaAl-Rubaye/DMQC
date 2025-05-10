@@ -1,0 +1,21 @@
+lr: 0.0001
+n_epoches: 300
+wd: 0.0001
+threshold: 0.5
+bs: 32
+n_folds: 5
+model: "resnet50"
+backbone: 'UNet'
+num_workers: 8
+milestones:
+  - 100
+  - 150
+  - 200
+  - 225
+
+best_threshold:
+  wb: 0.32
+  b: 0.48
+  m: 0.39
+  sf: 0.15
+  n: 0.1

@@ -1,0 +1,9 @@
+lr: 0.0001
+n_epoches: 200
+wd: 0.0001
+threshold: 0.5
+bs: 8
+n_folds: 5
+model: "vgg16_bn"
+backbone: 'UNet'
+num_workers: 8
