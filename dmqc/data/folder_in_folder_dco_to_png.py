@@ -368,7 +368,6 @@ if __name__ == "__main__":
 
             if data.ViewPosition != "MLO":
                 continue
-            # try:
             # Apply LUT
             # img = apply_voi_lut(img, data).astype(np.float64)
             # except ValueError:
