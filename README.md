@@ -1,2 +1,2 @@
 # DMQC
-DeepMammographyQualityControl as a package 
+Deep Mammography Quality Control
