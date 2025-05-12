@@ -20,11 +20,11 @@ DMQC applies a two-step approach: deep learning-based segmentation of mammograms
 - **Annotations**: Images were labeled in CVAT with five pixel-level classes: whole breast, breast, pectoral muscle, nipple, and skin-folds.
 
 - **Architecture**: U-Net and Feature Pyramid Network (FPN) decoders were tested with VGG11, ResNet34, and ResNet50 backbones. The U-Net architecture consists of an encoder-decoder path with skip connections to enable precise localization.  
-  ![U-Net Architecture](figures/Figure6.png)  
+  ![U-Net Architecture](Figures/Figure6.png)  
   *Figure 6. U-Net architecture used for segmenting breast anatomy and artifacts.*
 
 - **Workflow**: The system preprocesses input images, applies deep learning segmentation, and then evaluates the segmented masks based on diagnostic quality rules.  
-  ![Workflow](figures/Figure8.png)  
+  ![Workflow](Figures/Figure8.png)  
   *Figure 8. End-to-end workflow: segmentation followed by PGMI-based quality control.*
 
 - **Training**:
@@ -34,7 +34,7 @@ DMQC applies a two-step approach: deep learning-based segmentation of mammograms
   - Evaluation metric: Dice coefficient (per class)
 
 - **Quality Assessment**: After segmentation, a custom rule-based script evaluates four key positioning criteria from the predicted masks, including presence of the nipple, detection of skin-folds, muscle angle, and muscle length.  
-  ![PGMI Rules](figures/Figure14.png)  
+  ![PGMI Rules](Figures/Figure14.png)  
   *Figure 14. Quality assessment criteria implemented using the PGMI standard.*
 
 ---
@@ -43,12 +43,12 @@ DMQC applies a two-step approach: deep learning-based segmentation of mammograms
 
 - **Segmentation Results**: The best-performing model (FPN with VGG11 backbone) achieved Dice scores above 0.90 for whole breast, breast, and muscle classes, and over 0.63 for skin-folds and nipple.
 
-  ![Segmentation Examples](figures/Figure15.png)  
+  ![Segmentation Examples](Figures/Figure15.png)  
   *Figure 15. Segmentation results: original image (top), manual annotation (middle), and model prediction (bottom).*
 
 - **Automated Assessment Output**: The software interprets the segmentation results to generate quality control reports, flagging issues such as poor nipple positioning or inadequate muscle visualization.
 
-  ![Quality Report](figures/Figure16.png)  
+  ![Quality Report](Figures/Figure16.png)  
   *Figure 16. Automated quality assessment report based on segmented anatomical features.* 
 
 ## ⚙️ Package Contents
