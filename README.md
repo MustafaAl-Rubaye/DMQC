@@ -54,9 +54,16 @@ DMQC applies a two-step approach: deep learning-based segmentation of mammograms
 ## ⚙️ Package Contents
 
 - `dmqc/` – Core segmentation and quality assessment code
-- `conf/` – YAML configs for model and rules
-- `env.yaml` – Conda dependencies
-- `setup.py` – Install script
+- `conf/` – YAML configuration files for models and PGMI rules
+- `Figures/` – Visual assets used in documentation and reporting
+- `env.yaml` – Conda environment specification
+- `setup.py` – Installation script
+- `.pre-commit-config.yaml` – Pre-commit hook configurations
+- `.flake8` – Flake8 linting configuration
+- `black.toml` – Black code formatter configuration
+- `.gitignore` – Git ignore rules
+- `LICENSE` – Apache 2.0 license
+- `README.md` – Project overview and usage instructions
 
 ## 🚀 Getting Started
 
